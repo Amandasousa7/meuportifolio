@@ -84,13 +84,13 @@ body {
     color: var(--primary-dark);
 }
 
-/* Hero Section */
+
 
   .hero-image {
-        border-radius: 40%;  /* Isso transforma em círculo */
-        width: 200px;        /* Largura e altura devem ser iguais */
+        border-radius: 40%;  
+        width: 200px;        
         height: 700px;
-        object-fit: cover;   /* Garante que a imagem preencha o círculo sem distorcer */
+        object-fit: cover;  
           
     }
 
