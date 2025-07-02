@@ -3,7 +3,7 @@
     --primary-dark: #b48686;
     --white: #ffffff;
     --gray: #F5F5F5;
-    --dark: #333333; /* Ajustado para um tom escuro */
+    --dark: white; /* Ajustado para um tom escuro */
     --text-light: #c77575; /* Corrigido para um único # */
 }
 
