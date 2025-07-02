@@ -162,7 +162,7 @@ body {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: var(--black);
+       color: var(--dark);
 }
 
 /* Skills Section */
