@@ -1,31 +1,24 @@
-
-
 :root {
     --primary: #ffffff; /* Cor salmão */
     --primary-dark: #b48686;
     --white: #ffffff;
     --gray: #F5F5F5;
-    --dark: #ffffff;
-    --text-light: ##c77575;
-
+    --dark: #333333; /* Ajustado para um tom escuro */
+    --text-light: #c77575; /* Corrigido para um único # */
 }
-*
- {
+
+/* Reset e estilo básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.skill-card
-
-
 
 body {
     background-color: var(--white);
     color: var(--dark);
     line-height: 1.6;
-
-    
 }
 
 /* Navbar */
@@ -36,17 +29,15 @@ body {
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-
-  background: radial-gradient(
-    circle at top left,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.05)
-  );
-   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+    background: radial-gradient(
+        circle at top left,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.05)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-container {
@@ -57,8 +48,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .logo {
     font-size: 1.5rem;
@@ -84,36 +73,14 @@ body {
     color: var(--primary-dark);
 }
 
-
-
-  .hero-image {
-        border-radius: 40%;  
-        width: 200px;        
-        height: 700px;
-        object-fit: cover;  
-          
-    }
-
+/* Hero Section */
 .hero {
     padding: 10rem 2rem 5rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to left, rgba(221, 147, 139, 0.1) 0%, rgba(100, 98, 98, 0.918) 70%) 
+    background: linear-gradient(to left, rgba(221, 147, 139, 0.1) 0%, rgba(100, 98, 98, 0.918) 70%);
 }
- .hero-vignette::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30%;
-    background: linear-gradient(to bottom, 
-        transparent, 
-        rgba(0,0,0,0.3) 70%, 
-        rgba(0,0,0,0.7));
-}
-
 
 .hero-container {
     max-width: 1200px;
@@ -122,7 +89,6 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    
 }
 
 .hero-text h1 {
@@ -145,7 +111,6 @@ body {
 }
 
 .cta-buttons {
-
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
@@ -161,7 +126,7 @@ body {
 
 .primary-btn {
     background-color: var(--primary);
-    color: var(--black);
+    color: var(--dark);
 }
 
 .primary-btn:hover {
@@ -169,19 +134,16 @@ body {
 }
 
 /* About Section */
-
-
 .section {
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, rgba(221, 174, 169, 0.1) 0%, rgba(100, 91, 91, 0.918) 70%);
+}
 
-            padding: 5rem 2rem;
-            background: linear-gradient(to right, rgba(221, 174, 169, 0.1) 0%, rgba(100, 91, 91, 0.918) 70%);
-    }
-   .section-title {
-            text-align: center;
-            font-size: 3rem;
-            margin-bottom: 3rem;
-            color: var(--black);
-            
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--dark);
 }
 
 .about-container {
@@ -193,29 +155,15 @@ body {
 }
 
 .about-text h3 {
-    
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: var(--black);
-    left: 500px
-
-}
-.about-text h3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 2rem;
-        }
+    color: var(--dark);
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     color: var(--text-light);
-
 }
-
-
-
 
 /* Skills Section */
 .skills-container {
@@ -237,7 +185,6 @@ body {
 .skill-card:hover {
     transform: translateY(-5px);
 }
-
 
 /* Projects Section */
 .projects-grid {
@@ -339,7 +286,6 @@ body {
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 3rem;
-    color:
 }
 
 .social-link {
@@ -349,7 +295,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--black);
+    background-color: var(--dark);
     color: var(--white);
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -420,40 +366,25 @@ body {
         font-size: 2rem;
     }
 }
-  body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background: #f9f9f9;
-        }
-        
-        section {
-            min-height: 100vh;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        
-        /* EFEITO DE APARIÇÃO */
-        .aparecer {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        
-        .aparecer.visivel {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-       [data-anime] {
+
+/* EFEITO DE APARIÇÃO */
+.aparecer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.aparecer.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-anime] {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 [data-anime].animate {
     opacity: 1;
     transform: translateY(0);
